@@ -8,7 +8,6 @@
 
   body{
     font-family: 'Abril Fatface', cursive;
-    
   }
 
   nav{
@@ -119,6 +118,7 @@
   .footerol li a, .ML a{
     color: black;
     font-size: 20px;
+    align-items: center;
 }
 
   .article1, .article2, .article3, .article4
@@ -215,14 +215,9 @@
       
     }
 
-
     #check:checked ~ ul{
       left: 0;
     }
   }
 
-  section{
-    background: url(bg1.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-  }
+  

@@ -8,7 +8,6 @@
 
   body{
     font-family: 'Abril Fatface', cursive;
-    
   }
 
   nav{
@@ -44,6 +43,7 @@
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
+    
   }
 
   nav ul li a {
@@ -52,18 +52,16 @@
     padding: 5px 5px;
     border-radius: 3px;
     text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
+    
   }
-
-  i{
-    margin: 5px;
-  }
-
 
   a.active,a:hover{
     background:white;
     transition: .5s;
     color: black;
-    border-radius: 7px;
+    border-radius: 7px;  
   }
 
   .checkbtn{
@@ -80,17 +78,10 @@
     display: none;
   }
 
-  .homebanner {
-      width: 100%;
-      margin-top: 30px;
-  }
-
   main{
      width: 80vw;
      margin: auto;
      text-align: center;
-     
-     
   }
 
   .headline  {
@@ -101,69 +92,33 @@
       border-radius: 5px;
       font-family: 'Niconne', cursive;
   }
-
-  .footernav, ol 
+  
+  .footernav, ol
   {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: rgb(136, 136, 136);
     color: black; 
+    
+    
   }
 
   .footerol
   {
     width: 30%;
+    
+    
   }
 
   .footerol li a, .ML a{
     color: black;
     font-size: 20px;
+    text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
+
 }
 
-  .produits
-  {
-      background: url(Article1.jpg);
-      background-size: cover;
-      border-radius: 5px;
-      height: 100px;
-      margin-bottom: 30px;
-      box-shadow:0px 0px 13px 6px #000000; 
-      
-  }
-
-  .article1:hover, .article2:hover, .article3:hover, .article4:hover{
-    -webkit-transform: scale(1.05);
-    -webkit-transition: all 0.3s ease;
-  }
-  
-  .article2
-  {
-    background: url(Article2.jpg);
-    background-size: cover;
-  }
-
-  .article3{
-    background: url(Article3.jpg);
-    background-size: cover;
-  }
-
-  h1 {
-    background: rgba(0, 0, 0, 0.637);
-    color: white;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    padding: 50px;
-    width: 100%;
-    margin-top: 40px;
-  }
-  .fa-hand-sparkles, .fa-thumbs-up, .fa-calendar-check, .fa-flag {
-    font-size: 70px;
-    padding: 15px;
-  }
 
   @media (max-width: 980px){
     label.logo{
@@ -203,14 +158,11 @@
     nav ul li a{
       font-size: 20px;
       color: white;
-    
     }
 
     a:hover {
-      background: none;
       background: white;
-      color: black;
-      
+      color: black; 
     }
 
 
@@ -219,8 +171,4 @@
     }
   }
 
-  section{
-    background: url(bg1.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-  }
+  
