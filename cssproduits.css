@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: 'Abril Fatface', cursive;
+    
+  }
+
+  nav{
+    
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 0px 24px 2px rgba(0,0,0,0.52);
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+  }
+
+  .headernav{
+    background: #e60303d8;
+    
+  }
+
+  .logo{
+    color: white;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-weight: bold;
+    font-family: 'Playball', cursive;
+  }
+
+  nav ul{
+    float: right;
+    margin-right: 10px;
+  }
+
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+
+  nav ul li a {
+    color:white;
+    font-size: 17px;
+    padding: 5px 5px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  i{
+    margin: 5px;
+  }
+
+
+  a.active,a:hover{
+    background:white;
+    transition: .5s;
+    color: black;
+    border-radius: 7px;
+  }
+
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check{
+    display: none;
+  }
+
+  .homebanner {
+      width: 100%;
+      margin-top: 30px;
+  }
+
+  main{
+     width: 80vw;
+     margin: auto;
+     text-align: center;
+     
+     
+  }
+
+  .headline  {
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.54);
+      border-radius: 5px;
+      font-family: 'Niconne', cursive;
+  }
+
+  .footernav, ol 
+  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(136, 136, 136);
+    color: black; 
+  }
+
+  .footerol
+  {
+    width: 30%;
+  }
+
+  .footerol li a, .ML a{
+    color: black;
+    font-size: 20px;
+}
+
+  .produits
+  {
+      background: url(Article1.jpg);
+      background-size: cover;
+      border-radius: 5px;
+      height: 100px;
+      margin-bottom: 30px;
+      box-shadow:0px 0px 13px 6px #000000; 
+      
+  }
+
+  .article1:hover, .article2:hover, .article3:hover, .article4:hover{
+    -webkit-transform: scale(1.05);
+    -webkit-transition: all 0.3s ease;
+  }
+  
+  .article2
+  {
+    background: url(Article2.jpg);
+    background-size: cover;
+  }
+
+  .article3{
+    background: url(Article3.jpg);
+    background-size: cover;
+  }
+
+  h1 {
+    background: rgba(0, 0, 0, 0.637);
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 50px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .fa-hand-sparkles, .fa-thumbs-up, .fa-calendar-check, .fa-flag {
+    font-size: 70px;
+    padding: 15px;
+  }
+
+  @media (max-width: 980px){
+    label.logo{
+      font-size: 25px;
+      padding-left: 30px;
+    }
+    nav ul li a{
+      font-size: 14px;
+      }
+    }
+
+
+  @media (max-width: 770px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #979797;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 1;
+      opacity: 0.97;
+      
+    }
+
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    
+    }
+    nav ul li a{
+      font-size: 20px;
+      color: white;
+    
+    }
+
+    a:hover {
+      background: none;
+      background: white;
+      color: black;
+      
+    }
+
+
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+  section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
