@@ -101,6 +101,37 @@
       
   }
 
+  .article1, .article2{
+    box-shadow:0px 0px 13px 6px #000000be;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+    line-height: 35px;
+    border-radius: 10px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+.articlep1, .articlep2
+{
+  width: 70%;
+  margin: 40px;
+}
+.article1:hover, .article2:hover{
+  -webkit-transform: scale(1.05);
+  -webkit-transition: all 0.3s ease;}
+
+.fa-dog, .fa-paw{
+  font-size: 100px;
+  padding-right: 20px;
+  color: red;
+}
+
  .carousel{
   box-shadow:0px 0px 13px 6px #000000; 
   border-radius: 10px;
