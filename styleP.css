@@ -10,6 +10,10 @@
     font-family: 'Abril Fatface', cursive;
   }
 
+  main{
+    padding-top: 100px;
+  
+  }
   nav{
     
     height: 80px;
@@ -17,13 +21,16 @@
     box-shadow: 0px 0px 24px 2px rgba(0,0,0,0.52);
     border-radius: 0px 0px 10px 10px;
     margin: auto;
-  }
-
-  .headernav{
-    background: #e60303d8;
     
   }
 
+  .headernav{
+    background: #f51a1a;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  
   .logo{
     color: white;
     font-size: 40px;
@@ -43,6 +50,7 @@
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
+    
   }
 
   nav ul li a {
@@ -51,19 +59,16 @@
     padding: 5px 5px;
     border-radius: 3px;
     text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
+    
   }
-
-  i{
-    margin: 5px;
-  }
-
 
   a.active,a:hover{
     background:white;
     transition: .5s;
     color: black;
-    border-radius: 7px;
-  }
+    border-radius: 7px; }
 
   .checkbtn{
     font-size: 30px;
@@ -79,29 +84,40 @@
     display: none;
   }
 
-  .homebanner {
-      width: 100%;
-      margin-top: 30px;
-  }
-
   main{
      width: 80vw;
      margin: auto;
      text-align: center;
-     
-     
   }
 
   .headline  {
       font-size: 50px;
       font-weight: bold;
       margin-bottom: 20px;
+      margin-top: 30px;
       box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.54);
       border-radius: 5px;
       font-family: 'Niconne', cursive;
+      
   }
 
-  .footernav, ol 
+ .carousel{
+  box-shadow:0px 0px 13px 6px #000000; 
+  border-radius: 10px;
+  margin-bottom: 50px;
+  z-index: 0;
+  height: auto;
+ }
+
+ img{
+  border-radius: 10px;
+  
+}
+.carousel-item img {
+    width: 100%;
+}
+
+  .footernav, ol
   {
     display: flex;
     justify-content: space-around;
@@ -118,54 +134,10 @@
   .footerol li a, .ML a{
     color: black;
     font-size: 20px;
-    align-items: center;
+    text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
 }
 
-  .article1, .article2, .article3, .article4
-  {
-      background: url(Article1.jpg);
-      background-size: cover;
-      border-radius: 5px;
-      height: 300px;
-      font-size: 20px;
-      display: flex;
-      align-items: center;
-      margin-bottom: 30px;
-      box-shadow:0px 0px 13px 6px #000000; 
-      
-  }
-
-  .article1:hover, .article2:hover, .article3:hover, .article4:hover{
-    -webkit-transform: scale(1.05);
-    -webkit-transition: all 0.3s ease;
-  }
-  
-  .article2
-  {
-    background: url(Article2.jpg);
-    background-size: cover;
-  }
-
-  .article3{
-    background: url(Article3.jpg);
-    background-size: cover;
-  }
-
-  p {
-    background: rgba(0, 0, 0, 0.637);
-    color: white;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    padding: 50px;
-    line-height: 40px;
-    display: flex;
-  }
-  .fa-hand-sparkles, .fa-thumbs-up, .fa-calendar-check, .fa-flag {
-    font-size: 70px;
-    padding: 15px;
-  }
 
   @media (max-width: 980px){
     label.logo{
@@ -191,10 +163,9 @@
       left: -100%;
       text-align: center;
       transition: all .5s;
-      z-index: 1;
-      opacity: 0.97;
-      
+      opacity: 0.98;
     }
+  
 
     nav ul li{
       display: block;
@@ -205,15 +176,13 @@
     nav ul li a{
       font-size: 20px;
       color: white;
-    
     }
 
     a:hover {
-      background: none;
       background: white;
       color: black;
-      
     }
+
 
     #check:checked ~ ul{
       left: 0;
