@@ -59,9 +59,7 @@
     padding: 5px 5px;
     border-radius: 3px;
     text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Abril Fatface', cursive;
-    
+    text-decoration: none; 
   }
 
   a.active,a:hover{
@@ -101,7 +99,8 @@
       
   }
 
-  .article1, .article2{
+  
+  .article{
     box-shadow:0px 0px 13px 6px #000000be;
     color: black;
     display: flex;
@@ -116,36 +115,31 @@
     border-radius: 10px;
     letter-spacing: 1.5px;
     font-weight: bold;
-}
-.articlep1, .articlep2
+    font-family: 'Marck Script', cursive;
+    margin-bottom: 30px;
+  }
+
+
+.articlep
 {
-  width: 70%;
   margin: 40px;
 }
-.article1:hover, .article2:hover{
+.article:hover{
   -webkit-transform: scale(1.05);
   -webkit-transition: all 0.3s ease;}
 
-.fa-dog, .fa-paw{
-  font-size: 100px;
-  padding-right: 20px;
-  color: red;}
-
- .carousel{
-  box-shadow:0px 0px 13px 6px #000000; 
-  border-radius: 10px;
-  margin-bottom: 50px;
-  z-index: 0;
-  height: auto;
- }
-
- img{
-  border-radius: 10px;
-  
-}
-.carousel-item img {
+  img{
     width: 100%;
-}
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    margin: 10px
+  }
+
 
   .footernav, ol
   {
