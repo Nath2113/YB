@@ -5,28 +5,12 @@
     list-style: none;
     box-sizing: border-box;
   }
-
   body{
     font-family: 'Abril Fatface', cursive;
   }
-
-  nav{
-    
-    height: 80px;
-    width: 100%;
-    box-shadow: 0px 0px 24px 2px rgba(0,0,0,0.52);
-    border-radius: 0px 0px 10px 10px;
-    margin: auto;
-  }
-
-  .headernav{
-    background: #f51a1a;
-    position: fixed;
-    z-index: 1;
-  }
   
- 
-
+  
+/*Logo*/
   .logo{
     color: white;
     font-size: 35px;
@@ -37,18 +21,30 @@
     text-transform: uppercase;
   }
 
+
+/*Barre et éléments de navigation*/
+  nav{
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 0px 24px 2px rgba(0,0,0,0.52);
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+  }
+  .headernav{
+    background: #f51a1a;
+    position: fixed;
+    z-index: 1;
+  }
+
   nav ul{
     float: right;
     margin-right: 10px;
   }
-
-  
   nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
   }
-
   nav ul li a {
     color:white;
     font-size: 17px;
@@ -56,12 +52,12 @@
     border-radius: 3px;
     text-transform: uppercase;
   }
-
   i{
     margin: 5px;
   }
 
 
+/*Animation menu*/
   a.active,a:hover{
     background:white;
     transition: .5s;
@@ -69,6 +65,8 @@
     border-radius: 7px;
   }
 
+
+/*Bouton navigation "hamburger"*/
   .checkbtn{
     font-size: 30px;
     color: white;
@@ -78,24 +76,18 @@
     cursor: pointer;
     display: none;
   }
-
   #check{
     display: none;
   }
 
+
+/*Banner*/
   .homebanner {
       width: 100%;
       padding-top: 100px;
   }
-
-  main{
-     width: 80vw;
-     margin: auto;
-     text-align: center;
-     
-     
-  }
-
+  
+  
   .headline  {
       font-size: 50px;
       font-weight: bold;
@@ -105,29 +97,17 @@
       font-family: 'Niconne', cursive;
   }
 
-  .footernav, ol 
-  {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: rgb(136, 136, 136);
-    color: black; 
+
+/*Contenu principal*/
+  main{
+     width: 80vw;
+     margin: auto;
+     text-align: center;   
   }
+ 
 
-  .footerol
-  {
-    width: 30%;
-  }
-
-  .footerol li a, .ML a{
-    color: black;
-    font-size: 20px;
-
-}
-
-  .article1, .article2, .article3, .article4
-  {
-      
+/*Articles*/
+  .article1, .article2, .article3, .article4 {
       background-size: cover;
       border-radius: 5px;
       height: 270px;
@@ -147,15 +127,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    
-    
     }
 
+
+/*Animations articles*/
   .article1:hover, .article2:hover, .article3:hover, .article4:hover, .article5:hover{
     -webkit-transform: scale(1.05);
     -webkit-transition: all 0.3s ease;
   }
 
+
+/*Background articles*/
   .article1
   {
     background: url(Article1.jpg);
@@ -166,14 +148,17 @@
     background: url(Article2.jpg);
     background-size: cover;
   }
-
   .article3{
     background: url(Article3.jpg);
     background-size: cover;
   }
   .article4{
     background: url(Article4.jpg);
-    background-size: cover;}
+    background-size: cover;
+  }
+ 
+
+ /*Texte articles*/
   p{    
     background: rgba(0, 0, 0, 0.637);
     color: white;
@@ -185,18 +170,34 @@
     line-height: 30px;
     width: 100%;
     justify-content: center;
-  
   }
-  
   .fa-hand-sparkles, .fa-thumbs-up, .fa-calendar-check, .fa-flag, .fa-envelope{
     font-size: 70px;
     padding: 15px;
   }
 
-  
 
+/*Footer*/
+  .footernav, ol 
+  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(136, 136, 136);
+    color: black; 
+  }
+  .footerol
+  {
+    width: 30%;
+  }
+  .footerol li a, .ML a{
+    color: black;
+    font-size: 20px;
+}
+
+
+/*Gestion responsive*/
   @media  screen and (max-width: 500px) {
-    
   p{
     font-size: 1em;
   }
@@ -226,9 +227,7 @@
       font-size: 14px;
       }
   }
-
-
-  @media screen and (max-width: 850px){
+  @media screen and (max-width: 840px){
     .checkbtn{
       display: block;
     }
@@ -242,29 +241,21 @@
       text-align: center;
       transition: all .5s;
       z-index: 1;
-      
-      
     }
-
     nav ul li{
       display: block;
       margin: 50px 0;
-      line-height: 30px;
-    
+      line-height: 30px;   
     }
     nav ul li a{
       font-size: 20px;
-      color: white;
-    
+      color: white;   
     }
-
     a:hover {
       background: none;
       background: white;
-      color: black;
-      
+      color: black;  
     }
-
     #check:checked ~ ul{
       left: 0;
     }
